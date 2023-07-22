@@ -1,0 +1,88 @@
+.mainPage {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1%;
+}
+
+.Card {
+  width: 80%;
+  height: 100%;
+  margin: 0 20px;
+  padding: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+  transition: all 0.4s 0s ease;
+}
+
+.Card:hover {
+  width: 82%;
+  height: 102%;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9);
+}
+
+.top_page {
+  background-image: url(../background.png);
+  height: 90vh;
+  background-size: cover;
+  opacity: 0.5;
+}
+.head_text {
+  margin-top: -90vh;
+  margin-bottom: 20vh;
+}
+
+.Card_text {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  justify-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .mainPage {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1%;
+    margin-top: 10vh;
+  }
+  .footer {
+    height: 60vh;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+  .mainPage {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1%;
+  }
+  .footer {
+    height: 120vh;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .footer {
+    height: 430vh;
+  }
+  .mainPage {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1%;
+  }
+}

@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Amita");
+
+@media only screen and (min-width: 768px) {
+  .first_text {
+    margin-top: 2%;
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: Amita, cursive;
+    font-style: italic;
+    text-align: center;
+    color: rgb(143, 0, 0);
+    text-shadow: rgba(224, 163, 163, 0.84) 2px 2px 2px;
+  }
+
+  .cart {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    border: 4px solid rgba(14, 54, 81, 0.78);
+    border-radius: 15px;
+    margin-top: 2vh;
+  }
+
+  .heading {
+    display: flex;
+  }
+
+  .total_cart {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .address {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5vh;
+  }
+  .city {
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Button {
+    width: 40vw;
+  }
+  .responsive_not {
+    display: none;
+  }
+  .error {
+    background-image: url(../not_login.jpg);
+    height: 79vh;
+    width: 100vw;
+    background-size: cover;
+  }
+  .error_res {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .error {
+    display: none;
+  }
+  .error_res {
+    margin: 0 5vw;
+    margin-top: 20vh;
+    font-size: 2rem;
+    border: 1px solid black;
+    background-color: aquamarine;
+    border-radius: 5px;
+  }
+  .responsive {
+    display: none;
+  }
+  .first_text {
+    margin-top: 2vh;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: Amita, cursive;
+    font-style: italic;
+    text-align: center;
+    color: rgb(143, 0, 0);
+    text-shadow: rgba(224, 163, 163, 0.5) 2px 2px 2px;
+  }
+
+  .cart {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 55vh;
+    border: 4px solid rgba(14, 54, 81, 0.78);
+    border-radius: 15px;
+    margin-top: 2vh;
+  }
+
+  .total_cart {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .address {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5vh;
+  }
+  .city {
+    margin-top: 2vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Button {
+    width: 40vw;
+    margin-bottom: 5vh;
+  }
+}

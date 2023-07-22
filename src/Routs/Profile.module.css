@@ -1,0 +1,116 @@
+.em_us {
+  margin-bottom: 5vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    margin: 0 auto;
+    margin-top: 5vh;
+    display: grid;
+    grid-gap: 2vw;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .img {
+    width: 80vw;
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 35vh;
+  }
+  .email {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    border: 0.1rem solid #1c6ea4;
+    border-radius: 1rem;
+    margin-top: 5vh;
+    padding: 1rem;
+    width: 80vw;
+    background: rgb(243, 243, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(243, 243, 255, 0.5805672610841212) 0%,
+      rgba(156, 175, 176, 0.7878501742493873) 100%
+    );
+  }
+  .moreinfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .head {
+    opacity: 70%;
+    margin-top: 2vh;
+  }
+  .error {
+    display: none;
+  }
+  .error_res {
+    margin: 0 5vw;
+    margin-top: 20vh;
+    font-size: 2rem;
+    border: 1px solid black;
+    background-color: aquamarine;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .error {
+    background-image: url(../not_login.jpg);
+    height: 79vh;
+    width: 100vw;
+    background-size: cover;
+  }
+  .error_res {
+    display: none;
+  }
+  .main {
+    height: 60vh;
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2vw;
+    grid-template-columns: 60% 40%;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .img {
+    width: 40vw;
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 50vh;
+  }
+  .email {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    border: 0.1rem solid #1c6ea4;
+    border-radius: 1rem;
+    margin-top: 5vh;
+    padding: 1rem;
+    background: rgb(243, 243, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(243, 243, 255, 0.5805672610841212) 0%,
+      rgba(156, 175, 176, 0.7878501742493873) 100%
+    );
+  }
+  .moreinfo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 5vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .head {
+    opacity: 70%;
+  }
+}
